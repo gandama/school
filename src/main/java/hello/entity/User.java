@@ -5,50 +5,41 @@ package hello.entity;
  */
 public class User {
 
-    private String name;
-    private String password;
-    private String sex;
-    private String hobbys;
+    private int id;
+    private String mname;
+    private String mpwd;
 
-    public String getName() {
-        return name;
+
+    public int getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getPassword() {
-        return password;
+    public String getMname() {
+        return mname;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setMname(String mname) {
+        this.mname = mname;
     }
 
-    public String getSex() {
-        return sex;
+    public String getMpwd() {
+        return mpwd;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getHobbys() {
-        return hobbys;
-    }
-
-    public void setHobbys(String hobbys) {
-        this.hobbys = hobbys;
+    public void setMpwd(String mpwd) {
+        this.mpwd = mpwd;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "name='" + name + '\'' +
-                ", password='" + password + '\'' +
-                ", sex='" + sex + '\'' +
-                ", hobbys='" + hobbys + '\'' +
+                "id=" + id +
+                ", mname='" + mname + '\'' +
+                ", mpwd='" + mpwd + '\'' +
                 '}';
     }
 }

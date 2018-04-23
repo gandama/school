@@ -25,7 +25,7 @@ public interface HelloDao {
 
     public void UpDateUser();
 
-    @Select("select * from user where name=#{name}")
+    @Select("select * from admin where mname=#{name}")
     public User selectUser(String name);
 
 }
