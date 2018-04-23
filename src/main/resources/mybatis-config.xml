@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--DTD约束引入-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--全局配置开始-->
+<configuration>
+    <typeAliases>
+        <package name="hello.entity"></package>
+    </typeAliases>
+    <mappers>
+        <package name="hello.dao"></package>
+    </mappers>
+</configuration>
