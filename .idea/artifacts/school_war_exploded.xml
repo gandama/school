@@ -40,6 +40,8 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.5.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.5.4" />
           <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

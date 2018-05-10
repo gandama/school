@@ -4,10 +4,7 @@ import hello.dao.AdminDao;
 import hello.dao.HelloDao;
 import hello.dao.StudentDao;
 import hello.dao.TeacherDao;
-import hello.entity.Admin;
-import hello.entity.Display;
-import hello.entity.Teacher;
-import hello.entity.User;
+import hello.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -41,6 +38,24 @@ public class LoginService {
             display.setPwd(admin.getMpwd());
             display.setId(admin.getId());
             display.setRole("admin");
+        }
+        else {
+            Teacher teacher = teacherDao.selectTeacher(name, pwd);
+            if (teacher != null) {
+                display.setName(teacher.getTname());
+                display.setPwd(teacher.getTpwd());
+                display.setId(teacher.getId());
+                display.setRole("teacher");
+            }
+            else {
+                Student student = studentDao.selectStudent(name, pwd);
+                if (student != null) {
+                    display.setName(student.getSname());
+                    display.setPwd(student.getSpwd());
+                    display.setId(student.getId());
+                    display.setRole("student");
+                }
+            }
         }
         return display;
 

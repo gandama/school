@@ -27,15 +27,13 @@ public class LoginController {
     public String login(String name, String pwd,HttpServletRequest request){
 
         Display display = loginService.login(name, pwd);
-        if (display.getName() != null) {
-            request.getSession().setAttribute("login","");
-            return "/application/main.html";
+        request.getSession().setAttribute("role",display.getRole());
+        
+        if (display.getRole()==null) {
+            request.getSession().setAttribute("role","fall");
         }
-        else {
-           request.getSession().setAttribute("login","fall");
-            return "redirect:/application/login.jsp";
-        }
-
+        System.out.println("display = " + display);
+        return "redirect:/application/main.html";
     }
 
 
