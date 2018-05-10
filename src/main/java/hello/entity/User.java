@@ -5,9 +5,7 @@ package hello.entity;
  */
 public class User {
 
-    private int id;
-    private String mname;
-    private String mpwd;
+   int id;
 
 
     public int getId() {
@@ -18,28 +16,10 @@ public class User {
         this.id = id;
     }
 
-    public String getMname() {
-        return mname;
-    }
-
-    public void setMname(String mname) {
-        this.mname = mname;
-    }
-
-    public String getMpwd() {
-        return mpwd;
-    }
-
-    public void setMpwd(String mpwd) {
-        this.mpwd = mpwd;
-    }
-
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", mname='" + mname + '\'' +
-                ", mpwd='" + mpwd + '\'' +
                 '}';
     }
 }
