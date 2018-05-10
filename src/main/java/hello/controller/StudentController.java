@@ -2,11 +2,13 @@ package hello.controller;
 
 import hello.dao.StudentDao;
 import hello.entity.Teacher;
+import hello.utils.Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -21,24 +23,14 @@ public class StudentController {
     @Qualifier("StudentDao")
     StudentDao studentDao;
 
-    @RequestMapping("showTeachers")
-    public String showStudents(HttpServletRequest request){
 
-        String pageStr=request.getParameter("page");
-        int pageNow=1;
-        if (pageStr != null) {
-            pageNow=Integer.parseInt(pageStr);
-        }
-        request.getSession().setAttribute("pageNow",pageNow);
-        int num=9*(pageNow-1);
-        List<Teacher> users = studentDao.selectall(num);
-        request.getSession().setAttribute("users",users);
-        int totalCount = studentDao.selectcount();
-//        System.out.println("totalCount = " + totalCount);
-        int totalPage=(int) Math.ceil(totalCount*1.0/9);
-        request.getSession().setAttribute("totalCount",totalCount);
-        request.getSession().setAttribute("totalPage",totalPage);
-        return "/application/right.jsp";
+    @Resource
+    Utils utils;
+
+    @RequestMapping("showStudents")
+    public String showStudents(HttpServletRequest request){
+        utils.showMans(request,"student");
+        return "/application/studentmanage.jsp";
 
     }
 }

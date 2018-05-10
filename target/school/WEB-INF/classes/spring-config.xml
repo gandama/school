@@ -14,7 +14,7 @@
         http://www.springframework.org/schema/aop/spring-aop.xsd
 
 ">
-    <context:component-scan base-package="hello.entity,hello.service,hello.dao">
+    <context:component-scan base-package="hello.entity,hello.service,hello.dao,hello.utils">
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 

@@ -22,7 +22,7 @@ public interface StudentDao {
 
 
     @Select("select * from student limit #{num},9")
-    public ArrayList<Teacher> selectall(@Param("num") int num);
+    public ArrayList<Student> selectall(@Param("num") int num);
 
     @Select("select count(*) from student")
     public int selectcount();

@@ -32,7 +32,7 @@ public class LoginController {
         if (display.getRole()==null) {
             request.getSession().setAttribute("role","fall");
         }
-        System.out.println("display = " + display);
+//        System.out.println("display = " + display);
         return "redirect:/application/main.html";
     }
 

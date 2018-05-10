@@ -68,9 +68,9 @@
         <tr>
             <th><input name="" type="checkbox" value="" checked="checked"/></th>
             <th>id<i class="sort"><img src="/application/images/px.gif" /></i></th>
-            <th>教师姓名</th>
-            <th>教师密码</th>
-            <th>籍贯</th>
+            <th>学生姓名</th>
+            <th>学生密码</th>
+            <th>班级</th>
             <th>发布时间</th>
             <th>是否审核</th>
             <th>操作</th>
@@ -81,9 +81,9 @@
             <tr>
                 <td><input name="" type="checkbox" value="" /></td>
                 <td>${teacher.getId()}</td>
-                <td>${teacher.getTname()}</td>
-                <td>${teacher.getTpwd()}</td>
-                <td>江苏南京</td>
+                <td>${teacher.getSname()}</td>
+                <td>${teacher.getSpwd()}</td>
+                <td>${teacher.getSclass()}</td>
                 <td>2013-09-09 15:05</td>
                 <td>已审核</td>
                 <td><a href="#" class="tablelink">查看</a>     <a href="#" class="tablelink"> 删除</a></td>
@@ -96,11 +96,11 @@
     <div class="pagin">
         <div class="message">共<i class="blue">${totalCount}</i>条记录，当前显示第&nbsp;<i class="blue">${pageNow}&nbsp;</i>页</div>
         <div class="paginList">
-            <a style="margin-right: 8px; display:${pageNow==1?"none":"inline-block"} " href="/TeacherController/showTeachers.htm?page=${pageNow-1}">上一页</a>
+            <a style="margin-right: 8px; display:${pageNow==1?"none":"inline-block"} " href="/StudentController/showStudents.htm?page=${pageNow-1}">上一页</a>
             <c:forEach var="i" begin="1" end="${totalPage}" step="1">
-                <a style="margin-right: 8px" href="/TeacherController/showTeachers.htm?page=${i}">${i}</a>
+                <a style="margin-right: 8px" href="/StudentController/showStudents.htm?page=${i}">${i}</a>
             </c:forEach>
-            <a style="margin-right: 8px; display:${pageNow==totalPage?"none":"inline-block"} " href="/TeacherController/showTeachers.htm?page=${pageNow+1}">下一页</a>
+            <a style="margin-right: 8px; display:${pageNow==totalPage?"none":"inline-block"} " href="/StudentController/showStudents.htm?page=${pageNow+1}">下一页</a>
         </div>
     </div>
 

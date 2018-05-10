@@ -18,7 +18,7 @@ public class LoginFilter implements Filter {
         HttpServletRequest request= (HttpServletRequest) req;
         HttpServletResponse response= (HttpServletResponse) resp;
         String  role = (String) request.getSession().getAttribute("role");
-        System.out.println("role = " + role);
+//        System.out.println("role = " + role);
         if (!"fall".equals(role)) {
             chain.doFilter(req, resp);
         }

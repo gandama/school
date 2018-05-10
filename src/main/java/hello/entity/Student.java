@@ -7,6 +7,8 @@ public class Student{
     int id;
     String sname;
     String spwd;
+    String sclass;
+
 
 
     public int getId() {
@@ -34,12 +36,21 @@ public class Student{
         this.spwd = spwd;
     }
 
+    public String getSclass() {
+        return sclass;
+    }
+
+    public void setSclass(String sclass) {
+        this.sclass = sclass;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
                 "id=" + id +
                 ", sname='" + sname + '\'' +
                 ", spwd='" + spwd + '\'' +
+                ", sclass='" + sclass + '\'' +
                 '}';
     }
 }
