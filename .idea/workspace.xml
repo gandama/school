@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3183099b-3f3a-4a21-9ac0-69c8688ad28f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/AdminController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/application/adminmanage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/school.war" afterPath="$PROJECT_DIR$/target/school.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/controller/StudentController.java" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/StudentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/controller/TeacherController.java" afterPath="$PROJECT_DIR$/src/main/java/hello/controller/TeacherController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/dao/AdminDao.java" afterPath="$PROJECT_DIR$/src/main/java/hello/dao/AdminDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/dao/StudentDao.java" afterPath="$PROJECT_DIR$/src/main/java/hello/dao/StudentDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/entity/Student.java" afterPath="$PROJECT_DIR$/src/main/java/hello/entity/Student.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/utils/LoginFilter.java" afterPath="$PROJECT_DIR$/src/main/java/hello/utils/LoginFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hello/utils/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/hello/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/application/left.html" afterPath="$PROJECT_DIR$/src/main/webapp/application/left.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/application/studentmanage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/application/studentmanage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-config.xml" afterPath="$PROJECT_DIR$/target/classes/spring-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/school/WEB-INF/classes/spring-config.xml" afterPath="$PROJECT_DIR$/target/school/WEB-INF/classes/spring-config.xml" />
     </list>
@@ -992,7 +979,7 @@
       <workItem from="1525687762143" duration="595000" />
       <workItem from="1525755834339" duration="18698000" />
       <workItem from="1525936483780" duration="11764000" />
-      <workItem from="1525954398253" duration="5128000" />
+      <workItem from="1525954398253" duration="5185000" />
     </task>
     <task id="LOCAL-00001" summary="小修改">
       <created>1524473995620</created>
@@ -1029,11 +1016,18 @@
       <option name="project" value="LOCAL" />
       <updated>1525948256959</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="5.10修改,三个角色查询功能完成">
+      <created>1525959596434</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1525959596434</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52871000" />
+    <option name="totallyTimeSpent" value="52928000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1121,7 +1115,8 @@
     <MESSAGE value="添加了前端页面" />
     <MESSAGE value="5.10修改" />
     <MESSAGE value="5.10修改,Utils工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.10修改,Utils工具类" />
+    <MESSAGE value="5.10修改,三个角色查询功能完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.10修改,三个角色查询功能完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
